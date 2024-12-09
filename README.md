@@ -1,3 +1,12 @@
+How to set up locally: 
+
+1. Clone the repository.
+2. Create a mongodb database cluster (atlas recommended): Copy and paste the link to connect to mongoDB cluster in the env file in MONGO_URI variable.
+3. Generate a jwt token (jwt.io) and paste in the env file for JWT_SECRET variable
+4. Get your RapidAPI key and paste it in the env file (this can be found here once you have the rapid api latest mutual fund nav api: https://rapidapi.com/suneetk92/api/latest-mutual-fund-nav/playground)
+5. Run npm start from the mutual-fund-app directory.
+6. All of the below APIs could be tested and used by POSTMAN or curl commands. 
+
 Endpoints:
 
 1. **POST** ```/api/auth/register``` : To register a new user to the platform, body: 
@@ -25,4 +34,4 @@ Endpoints:
          "units_held": 10
    }
    ```
-7. **GET** ```/api/portfolio/``` : Get the current portfolio of the logged in user which shows all his/her investments, units purchased etc. 
+7. **GET** ```/api/portfolio/``` : Get the current portfolio of the logged in user which shows all his/her investments, units purchased etc.
